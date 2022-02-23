@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+   - name: public
+     description: An international football competition.
+     database: international_football
+     tables:
+        - name: result
+          description: result of the match.
+          columns:
+            - name: home_team
+              description: who the home team are 
+              tests:
+                - unique
+                - not_null
+
+        - name: shootouts
+          description: winner table.
+          columns:
+            - name: home_team
+              description: who the home team are 
+              tests:
+                - unique
+                - not_null
+
+          
+        
